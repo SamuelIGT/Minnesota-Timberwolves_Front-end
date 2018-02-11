@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../font/OpenSans-Regular.ttf);
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url(../font/OpenSans-Light.ttf);
+    font-size: 1em;
+}
+body{
+    background-color: #f8f9fa;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background: rgba(0, 80, 131, .8);
+    z-index: 2;
+    position: relative;
+}
+
+header .container {
+    position: relative;
+}
+
+header .header-black {
+    width: 100%;
+    background-color: #002b5b;;
+    overflow: auto;
+}
+
+header .header-black .container {
+    overflow: auto;
+}
+
+header #logo {
+    position: absolute;
+    top: -32px;
+    width: 180px;
+    height: 180px;
+}
+
+header ul {
+    float: right;
+    margin-bottom: 0px;
+    max-height: 48px;
+}
+
+header .header-black li {
+    display: inline-block;
+}
+
+header .header-black li a {
+    display: block;
+}
+
+header .header-black li a img {
+    width: 48px;
+    height: 48px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+#menu li {
+    margin: 0 auto;
+    display: inline-block;
+    font-family: "OpenSans";
+}
+#menu li a {
+    color:azure;
+    font-size: 16px;
+    padding: 10px 25px;
+}
+
+#menu ul {
+    position: absolute;
+    right: 0;
+    margin-top: 32px;
+}
+
+#menu input {
+    background-color: rgb(19, 39, 83);
+    border: none;
+    color: aliceblue;
+}
+#menu button {
+    border: none;
+    color: rgb(116, 130, 160);
+    position: absolute;
+    right: 0;
+}
+#menu input::-webkit-input-placeholder{
+    color: rgb(116, 130, 160);
+}
+
+#banner{
+    width: 100%;
+    height: 768px;
+    position: relative;
+    background: url(../images/banner2.jpg) no-repeat;
+    background-size: cover;
+    top: -112px;
+
+}
+#banner h1{
+    top: 192px;
+    font-family: "OpenSans-Light";
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    position: relative;
+    font-size: 92px;
+    color: aliceblue;
+    margin-left: 50px;
+
+}
+
+#banner h1 small{
+    font-size: 32px;
+    display: block;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .45);
+    color: aliceblue;
+    font-family: "OpenSans";
+    font-weight: bold;
+}
+#news h2{
+    font-size: 48px;
+    font-family: "OpenSans-Light";
+    text-transform: uppercase;
+    color: #005083;
+    text-align: center;
+    width: 100%;
+}
+#news hr{
+    border: #6dae43 solid 4px;
+    /* border: #C4CDD3 solid 2px; */
+    width: 200px;
+    margin: 0 auto;
+}
+#news{
+    position: relative;
+    top: -10px;
+}
+#news .thumbnails{
+    margin-top: 20px;
+    overflow:auto;
+
+}
+#news .thumbnails img{
+    width: 240px;
+    height: 180px;
+}
+#news .thumbnails h3{
+    color: #005083;
+    font-size: 18px;
+    font-family: "OpenSans-Light";
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+#news .thumbnails time{
+    color: #A7A7A7;
+    font-size: 18px;
+    font-family: "OpenSans-Light";
+
+}
+#news .thumbnails .col-md-3{
+    float:right;
+     width:25%;
+}
+
+#statistics{
+    background-color: #005083;
+    margin-top: 64px;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+#statistics p{
+    text-transform: uppercase;
+    font-family: 'OpenSans-Light';
+    color: #6dae43;
+    /* color: #C4CDD3; */
+    font-size: 64px;
+    margin-top: 32px;
+}
+#statistics p small{
+font-size: 24px;
+color: rgba( 255, 255, 255, .8);
+display: block;
+}
+#section{
+    background-color: #f8f9fa;
+}
+
+#call-to-action h2{
+    font-size: 48px;
+    font-family: "OpenSans-Light";
+    text-transform: uppercase;
+    color: #005083;
+    text-align: center;
+    width: 100%;
+}
+#call-to-action hr{
+    border: #6dae43 solid 4px;
+    width: 200px;
+    margin: 0 auto;
+}
+#call-to-action{
+    position: relative;
+    margin-top: 112px;
+}
+#call-to-action p{
+    margin-top: 64px;
+    margin-bottom: 40px;
+    color: #A7A7A7;
+    text-align: center;
+}
+
+#call-to-action .btn-shop {
+    color: #fff;
+    background-color: #005083;
+    border-color: #005083;
+
+}
+#call-to-action .btn{
+    text-align: center;
+    min-width: 164px;
+    height: 44px;
+    line-height: 32px;
+    border-radius: 0;
+}
+#call-to-action .btn-register {
+    color: #fff;
+    background-color: #6dae43;
+    border-color: #6dae43;
+}
+#call-to-action .row-max-400{
+    margin: 0 auto;
+    max-width: 400px;
+}
+footer .footer-row-top{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: #1E242B;
+    height: 200px;
+}
+
+footer .footer-row-bottom{
+    margin-left: 0;
+    margin-right: 0;
+    border-top: #2A303A 2px solid;
+    background-color: #191D23;
+    height: 64px;
+}
+footer{
+    margin-top: 102px;
+
+}
+
+footer .row p{
+    line-height: 63px;
+    margin-bottom: 0;
+}
+footer .float-right{
+    color: #005083;
+    font-size: 14px;
+    font-family: 'OpenSans';
+    font-weight: bold;
+}
+
+footer .float-left{
+    color: rgba(196, 207, 212, .2);
+    font-size: 14px;
+    font-family: 'OpenSans';
+}
+
+footer .footer-logo{
+    height: 160px;
+    width: 160px;
+    margin-top: 24px;
+}
+
+footer .col-footer h4{   
+    color: #FFF;
+    font-size: 16px;
+    font-family: 'OpenSans';
+    padding-bottom: 12px;
+    border-bottom: #2A303A 2px solid;
+}
+
+footer .col-popular-posts h5{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'OpenSans';
+    margin-bottom: -4px;
+}
+
+footer .col-footer{
+    margin-top: 32px;
+}
+footer .col-footer ul{
+    margin-top: 16px;
+}
+footer time{
+    color: #6dae43;
+    font-size: 14px;
+    font-family: Arial;
+}
+footer .col-popular-posts li{
+    margin-bottom: 8px;
+}
+footer .col-links ul a{
+    color: #FFF;
+    font-family: 'OpenSans';
+}
+footer .col-get-in-touch address, footer .col-get-in-touch a{
+    font-family: "OpenSans";
+    font-weight: lighter;
+    font-size: 14px;
+    color: #666666;
+    position: relative;
+}
+footer .col-get-in-touch p{
+    display: inline-block;
+    line-height: 0px;
+}
+footer .col-get-in-touch span{
+    display: inline-block;
+}
+footer .col-get-in-touch address{
+    margin-bottom: 6px;
+}
+footer .col-get-in-touch .list-socials li{
+    display: inline-block;
+    margin-left: 6px;
+}
+footer .col-get-in-touch .list-socials a{
+    border: #A7A7A7 1px solid;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-align: center;
+
+}

@@ -4,8 +4,10 @@
 <head>
     <title>Minnesota Timberwolves</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/timberwolves.css">
+    <link rel="stylesheet" href="lib/owlcarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel2/dist/assets/owl.theme.default.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
     <body>
@@ -55,11 +57,11 @@
                         <li><a href="#">Tickets</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Schedule</a></li>
-                        <li>
+                        <li class="search">
                             <div class="input-group mb-3">
-                                <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <input type="search" id="header-input-search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+                                    <button class="btn btn-outline-secondary" id="btn-search" type="button"><i class="fa fa-search"></i></button>
                                 </div>
                             </div>
                         </li>
@@ -81,26 +83,34 @@
                     <h2>Latest News</h2>
                     <hr>
                 </div>
-                <div class="rows thumbnails">
-                    <div class="col-md-3">
-                        <img src="images/thumb.jpg">
-                        <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
-                        <time>January 8, 2018</time>
-                    </div>
-                    <div class="col-md-3">
+                <div class="rows thumbnails owl-carousel owl-theme">
+                    <div class="item-inner">
+                        <div class="item">
                             <img src="images/thumb.jpg">
                             <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
                             <time>January 8, 2018</time>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                            <img src="images/thumb.jpg">
-                            <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
-                            <time>January 8, 2018</time>
+                    <div class="item-inner">
+                        <div class="item">
+                                <img src="images/thumb.jpg">
+                                <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
+                                <time>January 8, 2018</time>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                            <img src="images/thumb.jpg">
-                            <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
-                            <time>January 8, 2018</time>
+                    <div class="item-inner">
+                        <div class="item">
+                                <img src="images/thumb.jpg">
+                                <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
+                                <time>January 8, 2018</time>
+                        </div>
+                    </div>
+                    <div class="item-inner">
+                        <div class="item">
+                                <img src="images/thumb.jpg">
+                                <h3>Andrew Wiggins, Jimmy Butler lead Minnesota Timberwolves past Cleveland Cavaliers</h3>
+                                <time>January 8, 2018</time>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,13 +214,10 @@
             </div>
         </footer>
 
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="jquery/jquery-3.3.1.min.js"></script>
-        <script>
-        $(document).ready(function(){
-
-        });
-        </script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+        <script src="lib/owlcarousel2/dist/owl.carousel.min.js"></script>
+        <script src="js/effects.js"></script>
     </body>
 </head>
 

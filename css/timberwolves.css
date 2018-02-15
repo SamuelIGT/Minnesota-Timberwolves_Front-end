@@ -68,6 +68,10 @@ header .header-black li a img {
     display: inline-block;
     font-family: "OpenSans";
 }
+#menu li.search {
+    width: 196px;
+    transition: all 0.4s ease-out;
+}
 #menu li a {
     color:azure;
     font-size: 16px;
@@ -85,11 +89,14 @@ header .header-black li a img {
     border: none;
     color: aliceblue;
 }
+
 #menu button {
     border: none;
     color: rgb(116, 130, 160);
     position: absolute;
     right: 0;
+    z-index: 3;
+    transition: all 0.4s ease-out;
 }
 #menu input::-webkit-input-placeholder{
     color: rgb(116, 130, 160);
@@ -144,12 +151,8 @@ header .header-black li a img {
 #news .thumbnails{
     margin-top: 20px;
     overflow:auto;
+}
 
-}
-#news .thumbnails img{
-    width: 240px;
-    height: 180px;
-}
 #news .thumbnails h3{
     color: #005083;
     font-size: 18px;
@@ -164,9 +167,8 @@ header .header-black li a img {
     font-family: "OpenSans-Light";
 
 }
-#news .thumbnails .col-md-3{
-    float:right;
-     width:25%;
+#news .thumbnails .item{
+     width:75%;
 }
 
 #statistics{
@@ -344,3 +346,15 @@ footer .col-get-in-touch .list-socials a{
     text-align: center;
 
 }
+#menu li.search[class*="expand"]{
+    width: 300px;
+}
+
+#menu li.search button.expand{
+    opacity: 0;
+    z-index: 0;
+}
+
+/*jQuery styles*/
+/*div[class*="test"]{   
+}*/
